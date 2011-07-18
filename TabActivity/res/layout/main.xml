@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TabHost android:id="@+id/tab_host"
+        android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabWidget android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:id="@android:id/tabs"
+            android:layout_gravity="bottom" />
+        <FrameLayout android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent" android:layout_height="fill_parent" >
+            <LinearLayout android:id="@+id/first_tab"
+                android:orientation="vertical" android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:text="First Tab" />
+                <!-- Replace TextView with your layout content for this tab -->
+            </LinearLayout>
+            <LinearLayout android:id="@+id/second_tab"
+                android:orientation="vertical" android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:text="Second Tab" />
+                <!-- Replace TextView with your layout content for this tab -->
+            </LinearLayout>
+            <LinearLayout android:id="@+id/third_tab"
+                android:orientation="vertical" android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:text="One More Tab" />
+                <!-- Replace TextView with your layout content for this tab -->
+            </LinearLayout>
+            <LinearLayout android:id="@+id/edit_item_text_tab"
+                android:orientation="vertical" android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </FrameLayout>
+    </TabHost>
+</LinearLayout>
